@@ -1,0 +1,13 @@
+# 本机隐私/生成文件，绝不上传
+# 注意: gitignore 的注释必须独占一行，不能写在模式后面
+
+# 学号 + 明文密码
+config.json
+
+# 运行日志
+autologin.log
+
+# 安装时按本机路径生成的任务计划定义
+task.xml
+
+__pycache__/
