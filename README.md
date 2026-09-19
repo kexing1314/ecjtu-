@@ -97,13 +97,9 @@ GET `http://172.16.2.100`（3 秒超时）：
 - **半夜被踢下线不会自动重连？** 事件触发只覆盖"重新连网"。被强制注销后双击 `立即登录.bat` 即可；
   如需定时自动重连，可自行给任务加重复触发器。
 - **想彻底卸载？** `管理任务.bat` → `2`，再删掉本文件夹即可，无注册表残留。
-- **安全吗？** 密码明文存在本机 `config.json`（已 gitignore）；请求只发给校内认证网关
+- **安全吗？** 密码明文存在本机 `config.json`；请求只发给校内认证网关
   `172.16.2.100`，不发往任何外部地址。
 
-## 致谢与来源
-
-- 认证协议参考自开源项目 [XY0797/ECJTUsWLANAutoLogin](https://github.com/XY0797/ECJTUsWLANAutoLogin)（GPLv3），
-  并得到 [Replica0110/ECJTU-AutoLogin-Desktop](https://github.com/Replica0110/ECJTU-AutoLogin-Desktop)、
-  [AccAutomaton/ECJTU-CAN-Helper](https://github.com/AccAutomaton/ECJTU-CAN-Helper) 等项目的交叉印证
+## 结尾
 - 本项目为独立的 Python 实现，代码以 MIT 协议提供
 - 仅供华东交通大学师生个人学习使用；若学校升级认证系统导致失效，提 issue 或自行抓包更新 `LOGIN_URL`
