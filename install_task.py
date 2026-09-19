@@ -35,6 +35,11 @@ TEMPLATE = """<?xml version="1.0" encoding="UTF-16"?>
       <Enabled>true</Enabled>
       <Subscription>{subscription}</Subscription>
     </EventTrigger>
+    <LogonTrigger>
+      <Enabled>true</Enabled>
+      <UserId>{user}</UserId>
+      <Delay>PT10S</Delay>
+    </LogonTrigger>
   </Triggers>
   <Principals>
     <Principal id="Author">
